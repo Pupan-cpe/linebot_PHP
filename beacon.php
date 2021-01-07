@@ -53,7 +53,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "Temperature",
+          "text" => "Temperature  IN Albany (US)",
           "size" => "lg",
           "align" => "start",
           "weight" => "bold",
@@ -61,7 +61,7 @@ $jsonFlex = [
         ],
         [
           "type" => "text",
-          "text" => "$data1",
+          "text" => "$data1 "+" &deg; C",
           "size" => "3xl",
           "weight" => "bold",
           "color" => "#000000"
@@ -73,12 +73,12 @@ $jsonFlex = [
           "weight" => "bold",
           "color" => "#000000"
         ],
-        [
-          "type" => "text",
-          "text" => "2019.02.14 21:47 (GMT+0700)",
-          "size" => "xs",
-          "color" => "#B2B2B2"
-        ],
+        // [
+        //   "type" => "text",
+        //   "text" => "2019.02.14 21:47 (GMT+0700)",
+        //   "size" => "xs",
+        //   "color" => "#B2B2B2"
+        // ],
         [
           "type" => "text",
           "text" => "Payment complete.",
