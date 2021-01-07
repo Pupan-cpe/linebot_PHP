@@ -123,7 +123,7 @@ $jsonFlex = [
           "action" => [
             "type" => "uri",
             "label" => "View Details",
-            "uri" => "https://google.co.th/"
+            "uri" => "https://github.com/pupan-cpe"
           ]
         ]
       ]
