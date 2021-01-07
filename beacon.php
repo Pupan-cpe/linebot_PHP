@@ -109,7 +109,7 @@ $jsonFlex = [
             ],
             [
               "type" => "text",
-              "text" => "$data1 "+" C ",
+              "text" => "$data1",
               "align" => "end",
               "color" => "#000000"
             ]
