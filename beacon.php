@@ -80,7 +80,13 @@ $jsonFlex = [
           "size" => "xs",
           "color" => "#B2B2B2"
         ],
-     
+        [
+          "type" => "text",
+          "text" => "Payment complete.",
+          "margin" => "lg",
+          "size" => "lg",
+          "color" => "#000000"
+        ]
       ]
     ],
     "body" => [
