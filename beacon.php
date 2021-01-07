@@ -42,31 +42,33 @@ echo $data1;
 
 
 $jsonFlex = [
-  "type" => "flex",
-  "altText" => "Hello Flex Message",
-  "contents" => [
-    "type" => "bubble",
-    "direction" => "ltr",
-    "header" => [
-      "type" => "box",
-      "layout" => "vertical",
-      "contents" => [
+  [
+    "type"=> "bubble",
+    "direction"=> "ltr",
+    "header"=> [
+      "type"=> "box",
+      "layout"=> "vertical",
+      "contents"=> [
         [
-          "type" => "text",
-          "text" => "Temperature IN Albany (US)",
-          "size" => "lg",
-          "align" => "start",
-          "weight" => "bold",
-          "color" => "#009813"
+          "type"=> "text",
+          "text"=> "Temp",
+          "color"=> "#FFFFFFFF",
+          "align"=> "center",
+          "contents"=> []
         ],
-        "hero" => [
-          "type"=> "image",
-          "url"=> "https=>//static.bhphotovideo.com/explora/sites/default/files/styles/top_shot/public/Color-Temperature.jpg?itok=yHYqoXAf",
-          "size"=> "full",
-          "aspectRatio"=> "1.51=>1",
-          "aspectMode"=> "fit"
-        ],
+        [
+          "type"=> "text",
+          "text"=> "Temp",
+          "contents"=> []
+        ]
       ]
+    ],
+    "hero"=> [
+      "type"=> "image",
+      "url"=> "https=>//static.bhphotovideo.com/explora/sites/default/files/styles/top_shot/public/Color-Temperature.jpg?itok=yHYqoXAf",
+      "size"=> "full",
+      "aspectRatio"=> "1.51:1",
+      "aspectMode"=> "fit"
     ],
     "body"=> [
       "type"=> "box",
@@ -79,21 +81,17 @@ $jsonFlex = [
           "contents"=> []
         ]
       ]
-      ],
-    "footer" => [
-      "type" => "box",
-      "layout" => "horizontal",
-      "contents" => [
+    ],
+    "footer"=> [
+      "type"=> "box",
+      "layout"=> "horizontal",
+      "contents"=> [
         [
-          "type" => "text",
-          "text" => "View Details",
-          "size" => "lg",
-          "align" => "start",
-          "color" => "#0084B6",
-          "action" => [
-            "type" => "uri",
-            "label" => "View Details",
-            "uri" => "https://github.com/pupan-cpe"
+          "type"=> "button",
+          "action"=> [
+            "type"=> "uri",
+            "label"=> "PUPAN",
+            "uri"=> "https://linecorp.com"
           ]
         ]
       ]
