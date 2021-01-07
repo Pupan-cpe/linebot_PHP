@@ -18,18 +18,26 @@ $data=json_decode($json);
 
 echo '<h1>', $data->city->name, ' (', $data->city->country, ')</h1>';
 
+
 // the general information about the weather
-echo '<h2>Temperature:</h2>';
-echo '<p><strong>Current:</strong> ', $data->list[0]->main->temp, '&deg; C</p>';
-echo '<p><strong>Min:</strong> ', $data->list[0]->main->temp_min, '&deg; C</p>';
-echo '<p><strong>Max:</strong> ', $data->list[0]->main->temp_max, '&deg; C</p>';
+ echo '<h2>Temperature:</h2>';
+echo '<p><strong>Current:</strong> ', $data1 =  $data->list[0]->main->temp, '&deg; C</p>';
+echo '<p><strong>Min:</strong> ', $data2 =  $data->list[0]->main->temp_min, '&deg; C</p>';
+echo '<p><strong>Max:</strong> ', $data3 =   $data->list[0]->main->temp_max, '&deg; C</p>';
 
 
-$myObj->name = "John";
-$myObj->age = 30;
-$myObj->city = "New York";
+
+$myObj->name = "$data1";
+$myObj->age = "$data2";
+$myObj->city = "$data3";
+
 
 $myJSON = json_encode($myObj);
+echo $myJSON;
+echo "-------------------";
+$data=json_decode($myJSON);
+echo $data1;
+
 
 
 
@@ -101,7 +109,7 @@ $jsonFlex = [
             ],
             [
               "type" => "text",
-              "text" => "$myJSON",
+              "text" => "$data1",
               "align" => "end",
               "color" => "#000000"
             ]
