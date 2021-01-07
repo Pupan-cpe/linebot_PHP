@@ -1,19 +1,18 @@
 <?php
 
 
-$API_URL = 'https=>//api.line.me/v2/bot/message';
-$ACCESS_TOKEN = 'nbUIY4GcXs7w7ffWYv / L0qRgK64ijNNsOV1RvCabrmFCSCmEzBi2UCS8Tv2nmWUiVmFV1YjtAqdWQAVGSFK4 / v7IaPIwRMOVNYR + SlJ2H13hsoMbj'; 
-$channelSecret = '
-42ca5cec5f0f16736ca482d18b16d55a';
+$API_URL = 'https://api.line.me/v2/bot/message';
+$ACCESS_TOKEN = 'nbUIY4GcXs7w7ffWYv/L0qRgK64ijNNsOV1RvCabrmFCSCmEzBi2UCS8Tv2nmWUiVmFV1YjtAqdWQAVGSFK4/v7IaPIwRMOVNYR+SlJ2H13hsoMbjWftBp/rBkgM3BrNuHbIsTZKT/Lv851QH3i6cgdB04t89/1O/w1cDnyilFU='; 
+$channelSecret = '42ca5cec5f0f16736ca482d18b16d55a';
 
 
-$POST_HEADER = array('Content-Type=> application/json', 'Authorization=> Bearer ' . $ACCESS_TOKEN);
+$POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 
-$request = file_get_contents('php=>//input');   // Get request content
+$request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 var_export($request_array);
 
-$url="http=>//api.openweathermap.org/data/2.5/forecast?q=Albany,usl&APPID=5099c5feb579c7a17b030de0d009282f&units=metric";
+$url="http://api.openweathermap.org/data/2.5/forecast?q=Albany,usl&APPID=5099c5feb579c7a17b030de0d009282f&units=metric";
 $json=file_get_contents($url);
 $data=json_decode($json);
 
@@ -21,10 +20,10 @@ echo '<h1>', $data->city->name, ' (', $data->city->country, ')</h1>';
 
 
 // the general information about the weather
- echo '<h2>Temperature=></h2>';
-echo '<p><strong>Current=></strong> ', $data1 =  $data->list[0]->main->temp, '&deg; C</p>';
-echo '<p><strong>Min=></strong> ', $data2 =  $data->list[0]->main->temp_min, '&deg; C</p>';
-echo '<p><strong>Max=></strong> ', $data3 =   $data->list[0]->main->temp_max, '&deg; C</p>';
+ echo '<h2>Temperature:</h2>';
+echo '<p><strong>Current:</strong> ', $data1 =  $data->list[0]->main->temp, '&deg; C</p>';
+echo '<p><strong>Min:</strong> ', $data2 =  $data->list[0]->main->temp_min, '&deg; C</p>';
+echo '<p><strong>Max:</strong> ', $data3 =   $data->list[0]->main->temp_max, '&deg; C</p>';
 
 
 
@@ -54,7 +53,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "Purchase",
+          "text" => "Temperature IN Albany (US)",
           "size" => "lg",
           "align" => "start",
           "weight" => "bold",
@@ -62,7 +61,7 @@ $jsonFlex = [
         ],
         [
           "type" => "text",
-          "text" => "฿ 100.00",
+          "text" => "$data1 "+" &deg; C",
           "size" => "3xl",
           "weight" => "bold",
           "color" => "#000000"
@@ -104,13 +103,13 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => "Merchant",
+              "text" => "Temp",
               "align" => "start",
               "color" => "#C3C3C3"
             ],
             [
               "type" => "text",
-              "text" => "BTS 01",
+              "text" => "$data1",
               "align" => "end",
               "color" => "#000000"
             ]
@@ -163,10 +162,6 @@ $jsonFlex = [
 
 
 
-
-
-
-
 if ( sizeof($request_array['events']) > 0 ) {
     foreach ($request_array['events'] as $event) {
         error_log(json_encode($event));
@@ -185,7 +180,7 @@ if ( sizeof($request_array['events']) > 0 ) {
 
         $send_result = send_reply_message($API_URL.'/reply', $POST_HEADER, $post_body);
 
-        echo "Result=> ".$send_result."\r\n";
+        echo "Result: ".$send_result."\r\n";
         
     }
 }
