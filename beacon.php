@@ -2,7 +2,7 @@
 
 
 $API_URL = 'https://api.line.me/v2/bot/message';
-$ACCESS_TOKEN = 'nbUIY4GcXs7w7ffWYv / L0qRgK64ijNNsOV1RvCabrmFCSCmEzBi2UCS8Tv2nmWUiVmFV1YjtAqdWQAVGSFK4 / v7IaPIwRMOVNYR + SlJ2H13hsoMbj'; 
+$ACCESS_TOKEN = 'nbUIY4GcXs7w7ffWYv/L0qRgK64ijNNsOV1RvCabrmFCSCmEzBi2UCS8Tv2nmWUiVmFV1YjtAqdWQAVGSFK4/v7IaPIwRMOVNYR+SlJ2H13hsoMbjWftBp/rBkgM3BrNuHbIsTZKT/Lv851QH3i6cgdB04t89/1O/w1cDnyilFU='; 
 $channelSecret = '42ca5cec5f0f16736ca482d18b16d55a';
 
 
@@ -53,7 +53,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "Temperature IN Albany (US)",
+          "text" => "Purchase",
           "size" => "lg",
           "align" => "start",
           "weight" => "bold",
@@ -61,7 +61,7 @@ $jsonFlex = [
         ],
         [
           "type" => "text",
-          "text" => "$data1 "+" &deg; C",
+          "text" => "฿ 100.00",
           "size" => "3xl",
           "weight" => "bold",
           "color" => "#000000"
@@ -103,7 +103,7 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => "Temp",
+              "text" => "Merchant",
               "align" => "start",
               "color" => "#C3C3C3"
             ],
