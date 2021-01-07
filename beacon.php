@@ -43,7 +43,7 @@ echo $data1;
 
 $jsonFlex = [
   "type" => "flex",
-  "altText" => "Hello Flex Message",
+  "altText" => "Line Beacon Message",
   "contents" => [
     "type" => "bubble",
     "direction" => "ltr",
@@ -53,7 +53,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "Purchase",
+          "text" => "Temp in Albany (US)",
           "size" => "lg",
           "align" => "start",
           "weight" => "bold",
@@ -61,27 +61,27 @@ $jsonFlex = [
         ],
         [
           "type" => "text",
-          "text" => "฿ 100.00",
+          "text" => "$data1",
           "size" => "3xl",
           "weight" => "bold",
           "color" => "#000000"
         ],
         [
           "type" => "text",
-          "text" => "Rabbit Line Pay",
+          "text" => ".",
           "size" => "lg",
           "weight" => "bold",
           "color" => "#000000"
         ],
         [
           "type" => "text",
-          "text" => "2019.02.14 21:47 (GMT+0700)",
+          "text" => ".",
           "size" => "xs",
           "color" => "#B2B2B2"
         ],
         [
           "type" => "text",
-          "text" => "Payment complete.",
+          "text" => "API Success!",
           "margin" => "lg",
           "size" => "lg",
           "color" => "#000000"
