@@ -24,6 +24,15 @@ echo '<p><strong>Current:</strong> ', $data->list[0]->main->temp, '&deg; C</p>';
 echo '<p><strong>Min:</strong> ', $data->list[0]->main->temp_min, '&deg; C</p>';
 echo '<p><strong>Max:</strong> ', $data->list[0]->main->temp_max, '&deg; C</p>';
 
+
+$myObj->name = "John";
+$myObj->age = 30;
+$myObj->city = "New York";
+
+$myJSON = json_encode($myObj);
+
+
+
 $jsonFlex = [
   "type" => "flex",
   "altText" => "Hello Flex Message",
@@ -92,7 +101,7 @@ $jsonFlex = [
             ],
             [
               "type" => "text",
-              "text" => "pupan-cpe",
+              "text" => "$myJSON",
               "align" => "end",
               "color" => "#000000"
             ]
