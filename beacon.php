@@ -86,13 +86,13 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => "Merchant",
+              "text" => "$data->list[0]->main->temp_max",
               "align" => "start",
               "color" => "#C3C3C3"
             ],
             [
               "type" => "text",
-              "text" => "BTS 01",
+              "text" => "$data->list[0]->main->temp",
               "align" => "end",
               "color" => "#000000"
             ]
