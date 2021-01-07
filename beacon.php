@@ -103,13 +103,13 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => "Merchant",
+              "text" => "temp",
               "align" => "start",
               "color" => "#C3C3C3"
             ],
             [
               "type" => "text",
-              "text" => "$data1",
+              "text" => "$data1 "+" C ",
               "align" => "end",
               "color" => "#000000"
             ]
@@ -122,12 +122,12 @@ $jsonFlex = [
           "contents" => [
             [
               "type" => "text",
-              "text" => "New balance",
+              "text" => ".",
               "color" => "#C3C3C3"
             ],
             [
               "type" => "text",
-              "text" => "฿ 45.57",
+              "text" => ".",
               "align" => "end"
             ]
           ]
@@ -145,7 +145,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "View Details",
+          "text" => "Github Pupan!",
           "size" => "lg",
           "align" => "start",
           "color" => "#0084B6",
