@@ -53,7 +53,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "Temperature in  Albany (US)",
+          "text" => "Temperature",
           "size" => "lg",
           "align" => "start",
           "weight" => "bold",
@@ -61,31 +61,31 @@ $jsonFlex = [
         ],
         [
           "type" => "text",
-          "text" => "$data "+" &deg; C",
+          "text" => "฿ 100.00",
           "size" => "3xl",
           "weight" => "bold",
           "color" => "#000000"
         ],
-        // [
-        //   "type" => "text",
-        //   "text" => "Rabbit Line Pay",
-        //   "size" => "lg",
-        //   "weight" => "bold",
-        //   "color" => "#000000"
-        // ],
-        // [
-        //   "type" => "text",
-        //   "text" => "2019.02.14 21:47 (GMT+0700)",
-        //   "size" => "xs",
-        //   "color" => "#B2B2B2"
-        // ],
-        // [
-        //   "type" => "text",
-        //   "text" => "Payment complete.",
-        //   "margin" => "lg",
-        //   "size" => "lg",
-        //   "color" => "#000000"
-        // ]
+        [
+          "type" => "text",
+          "text" => "Rabbit Line Pay",
+          "size" => "lg",
+          "weight" => "bold",
+          "color" => "#000000"
+        ],
+        [
+          "type" => "text",
+          "text" => "2019.02.14 21:47 (GMT+0700)",
+          "size" => "xs",
+          "color" => "#B2B2B2"
+        ],
+        [
+          "type" => "text",
+          "text" => "Payment complete.",
+          "margin" => "lg",
+          "size" => "lg",
+          "color" => "#000000"
+        ]
       ]
     ],
     "body" => [
