@@ -53,7 +53,7 @@ $jsonFlex = [
       "contents" => [
         [
           "type" => "text",
-          "text" => "Purchase",
+          "text" => "Temperature in  Albany (US)",
           "size" => "lg",
           "align" => "start",
           "weight" => "bold",
@@ -61,31 +61,31 @@ $jsonFlex = [
         ],
         [
           "type" => "text",
-          "text" => "฿ 100.00",
+          "text" => "$data "+" &deg; C",
           "size" => "3xl",
           "weight" => "bold",
           "color" => "#000000"
         ],
-        [
-          "type" => "text",
-          "text" => "Rabbit Line Pay",
-          "size" => "lg",
-          "weight" => "bold",
-          "color" => "#000000"
-        ],
-        [
-          "type" => "text",
-          "text" => "2019.02.14 21:47 (GMT+0700)",
-          "size" => "xs",
-          "color" => "#B2B2B2"
-        ],
-        [
-          "type" => "text",
-          "text" => "Payment complete.",
-          "margin" => "lg",
-          "size" => "lg",
-          "color" => "#000000"
-        ]
+        // [
+        //   "type" => "text",
+        //   "text" => "Rabbit Line Pay",
+        //   "size" => "lg",
+        //   "weight" => "bold",
+        //   "color" => "#000000"
+        // ],
+        // [
+        //   "type" => "text",
+        //   "text" => "2019.02.14 21:47 (GMT+0700)",
+        //   "size" => "xs",
+        //   "color" => "#B2B2B2"
+        // ],
+        // [
+        //   "type" => "text",
+        //   "text" => "Payment complete.",
+        //   "margin" => "lg",
+        //   "size" => "lg",
+        //   "color" => "#000000"
+        // ]
       ]
     ],
     "body" => [
@@ -96,42 +96,42 @@ $jsonFlex = [
           "type" => "separator",
           "color" => "#C3C3C3"
         ],
-        [
-          "type" => "box",
-          "layout" => "baseline",
-          "margin" => "lg",
-          "contents" => [
-            [
-              "type" => "text",
-              "text" => "Merchant",
-              "align" => "start",
-              "color" => "#C3C3C3"
-            ],
-            [
-              "type" => "text",
-              "text" => "$data1",
-              "align" => "end",
-              "color" => "#000000"
-            ]
-          ]
-        ],
-        [
-          "type" => "box",
-          "layout" => "baseline",
-          "margin" => "lg",
-          "contents" => [
-            [
-              "type" => "text",
-              "text" => "New balance",
-              "color" => "#C3C3C3"
-            ],
-            [
-              "type" => "text",
-              "text" => "฿ 45.57",
-              "align" => "end"
-            ]
-          ]
-        ],
+        // [
+        //   "type" => "box",
+        //   "layout" => "baseline",
+        //   "margin" => "lg",
+        //   "contents" => [
+        //     [
+        //       "type" => "text",
+        //       "text" => "Temp",
+        //       "align" => "start",
+        //       "color" => "#C3C3C3"
+        //     ],
+        //     [
+        //       "type" => "text",
+        //       "text" => "$data1",
+        //       "align" => "end",
+        //       "color" => "#000000"
+        //     ]
+        //   ]
+        // ],
+        // [
+        //   "type" => "box",
+        //   "layout" => "baseline",
+        //   "margin" => "lg",
+        //   "contents" => [
+        //     [
+        //       "type" => "text",
+        //       "text" => "New balance",
+        //       "color" => "#C3C3C3"
+        //     ],
+        //     [
+        //       "type" => "text",
+        //       "text" => "฿ 45.57",
+        //       "align" => "end"
+        //     ]
+        //   ]
+        // ],
         [
           "type" => "separator",
           "margin" => "lg",
