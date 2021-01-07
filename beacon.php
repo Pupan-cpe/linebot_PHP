@@ -96,42 +96,42 @@ $jsonFlex = [
           "type" => "separator",
           "color" => "#C3C3C3"
         ],
-        // [
-        //   "type" => "box",
-        //   "layout" => "baseline",
-        //   "margin" => "lg",
-        //   "contents" => [
-        //     [
-        //       "type" => "text",
-        //       "text" => "Temp",
-        //       "align" => "start",
-        //       "color" => "#C3C3C3"
-        //     ],
-        //     [
-        //       "type" => "text",
-        //       "text" => "$data1",
-        //       "align" => "end",
-        //       "color" => "#000000"
-        //     ]
-        //   ]
-        // ],
-        // [
-        //   "type" => "box",
-        //   "layout" => "baseline",
-        //   "margin" => "lg",
-        //   "contents" => [
-        //     [
-        //       "type" => "text",
-        //       "text" => "New balance",
-        //       "color" => "#C3C3C3"
-        //     ],
-        //     [
-        //       "type" => "text",
-        //       "text" => "฿ 45.57",
-        //       "align" => "end"
-        //     ]
-        //   ]
-        // ],
+        [
+          "type" => "box",
+          "layout" => "baseline",
+          "margin" => "lg",
+          "contents" => [
+            [
+              "type" => "text",
+              "text" => "Temp",
+              "align" => "start",
+              "color" => "#C3C3C3"
+            ],
+            [
+              "type" => "text",
+              "text" => "$data1",
+              "align" => "end",
+              "color" => "#000000"
+            ]
+          ]
+        ],
+        [
+          "type" => "box",
+          "layout" => "baseline",
+          "margin" => "lg",
+          "contents" => [
+            [
+              "type" => "text",
+              "text" => "New balance",
+              "color" => "#C3C3C3"
+            ],
+            [
+              "type" => "text",
+              "text" => "฿ 45.57",
+              "align" => "end"
+            ]
+          ]
+        ],
         [
           "type" => "separator",
           "margin" => "lg",
