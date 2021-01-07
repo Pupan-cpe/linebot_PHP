@@ -92,7 +92,7 @@ $jsonFlex = [
             ],
             [
               "type" => "text",
-              "text" => "BTS 01",
+              "text" => "pupan-cpe",
               "align" => "end",
               "color" => "#000000"
             ]
