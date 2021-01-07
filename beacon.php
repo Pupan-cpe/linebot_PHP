@@ -12,6 +12,18 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 var_export($request_array);
 
+$url="http://api.openweathermap.org/data/2.5/forecast?q=Albany,usl&APPID=5099c5feb579c7a17b030de0d009282f&units=metric";
+$json=file_get_contents($url);
+$data=json_decode($json);
+
+echo '<h1>', $data->city->name, ' (', $data->city->country, ')</h1>';
+
+// the general information about the weather
+echo '<h2>Temperature:</h2>';
+echo '<p><strong>Current:</strong> ', $data->list[0]->main->temp, '&deg; C</p>';
+echo '<p><strong>Min:</strong> ', $data->list[0]->main->temp_min, '&deg; C</p>';
+echo '<p><strong>Max:</strong> ', $data->list[0]->main->temp_max, '&deg; C</p>';
+
 $jsonFlex = [
   "type" => "flex",
   "altText" => "Hello Flex Message",
